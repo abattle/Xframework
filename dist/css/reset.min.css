@@ -1,0 +1,19 @@
+*{box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
+body,html{position:relative;overflow-x:hidden}
+body::-webkit-scrollbar,html::-webkit-scrollbar{display:none!important;width:0!important;height:0!important;-webkit-appearance:none;opacity:0!important}
+body{font-family:-apple-system,SF UI Text,"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,sans-serif,"\5B8B\4F53";-webkit-text-size-adjust:100%;-webkit-user-select:none;overflow:hidden;line-height:1.5;color:#333;background:#fff}
+::selection{background:#ff4900;color:#fff}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,legend,menu,nav,section{display:block;margin:0;padding:0}
+a,body,center,cite,code,dd,del,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,html,img,input,label,legend,li,mark,ol,p,section,span,strong,textarea,time,ul,var{margin:0;border:0;padding:0;font-style:normal}
+time{display:inline}
+audio,canvas,video{display:inline-block;zoom:1}
+a:active,a:hover,button,input,select{outline:0}
+input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password]{-webkit-appearance:none}
+input:-webkit-input-placeholder{color:#E0E0E0!important}
+p{margin-top:0;margin-bottom:0;font-size:14px;color:#8f8f94}
+ol,ul{list-style:none}
+b,strong{font-weight:700}
+pre{overflow:auto}
+img{border:0;vertical-align:middle;box-sizing:content-box;-webkit-box-sizing:content-box}
+a{color:#0062cc;text-decoration:none;background-color:transparent}
+hr{height:0;-webkit-box-sizing:content-box;box-sizing:content-box}

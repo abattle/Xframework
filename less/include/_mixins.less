@@ -1,0 +1,376 @@
+.scrollable(){
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+
+.no-scrollbar() {
+    &::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        -webkit-appearance: none;
+        opacity: 0 !important;
+    }
+}
+
+.depth(@level:1) {
+    & when (@level = 1) {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    & when (@level = 2) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 3) {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 4) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    & when (@level = 5) {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//css3动画
+.transition(@d) { 
+    -webkit-transition-duration: @d;
+    transition-duration: @d;
+}
+
+.delay(@d) {
+    -webkit-transition-delay: @d;
+    transition-delay: @d;
+}
+
+.transform(@t) {
+    -webkit-transform: @t;
+    transform: @t;
+}
+
+.translate3d(@x:0, @y:0, @z:0) {
+    -webkit-transform: translate3d(@x,@y,@z);
+    transform: translate3d(@x,@y,@z);
+}
+.animation(@a) {
+    -webkit-animation: @a;
+    animation: @a;
+}
+
+.transform-origin(@to) {
+    -webkit-transform-origin: @to;
+    transform-origin: @to;
+}
+
+.preserve3d() {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+//flex
+.flexbox(){
+	display:-webkit-box;
+    display:-webkit-flexbox;
+    display:-webkit-flex;
+    display:flex;
+}
+
+.flexbox-inline(){
+	display:-webkit-inline-box;
+	display:-webkit-inline-flexbox;
+	display:-webkit-inline-flex;
+	display:inline-flex;
+}
+
+.align-items(@ai) when (@ai=stretch){
+    -webkit-box-align:stretch;
+    -webkit-flex-align:stretch;
+    -webkit-align-items:stretch;
+    align-items:stretch;
+}
+
+.align-items(@ai) when (@ai=flex-start){
+    -webkit-box-align:start;
+    -webkit-flex-align:start;
+    -webkit-align-items:flex-start;
+    align-items:flex-start;
+}
+
+.align-items(@ai) when (@ai=flex-end){
+    -webkit-box-align:end;
+    -webkit-flex-align:end;
+    -webkit-align-items:flex-end;
+    align-items:flex-end;
+}
+
+.align-items(@ai) when (@ai=center){
+    -webkit-box-align:center;
+    -webkit-flex-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+}
+
+.align-items(@ai) when (@ai=baseline){
+    -webkit-box-align:baseline;
+    -webkit-flex-align:baseline;
+    -webkit-align-items:baseline;
+    align-items:baseline;
+}
+
+.align-self(@ai) when (@ai=stretch){
+    -webkit-align-self: stretch;
+    -webkit-flex-item-align: stretch;
+    align-self:stretch;
+}
+
+.align-self(@ai) when (@ai=flex-start){
+    -webkit-align-self: flex-start;
+    -webkit-flex-item-align: start;
+    align-self:flex-start;
+}
+
+.align-self(@ai) when (@ai=flex-end){
+    -webkit-align-self: flex-end;
+    -webkit-flex-item-align:end;
+    align-self:flex-end;
+}
+
+.align-self(@ai) when (@ai=center){
+    -webkit-align-self: center;
+    -webkit-flex-item-align: center;
+    align-self:center;
+}
+
+.align-self(@ai) when (@ai=baseline){
+    -webkit-align-self: baseline;
+    -webkit-flex-item-align: baseline;
+    align-self:baseline;
+}
+
+.flex-wrap(@fw) when (@fw = nowrap) {
+    -webkit-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap(@fw) when (@fw = wrap) {
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+//相当于flex:1 1 auto;
+.flex(@fa) when (@fa = auto){
+     -webkit-box-flex:1;
+     -webkit-flex:auto;
+     flex:auto;
+}
+
+
+//相当于flex:0 1 auto;
+.flex(@fa) when (@fa = initial){
+     -webkit-box-flex:0;
+     -webkit-flex:initial;
+     flex:initial;
+}
+
+//相当于flex:0 0 auto;
+.flex(@fa) when (@fa = none) {
+	 -webkit-box-flex:0;
+	 -webkit-flex:none;
+	 flex:none;
+}
+
+.flex(@fa) when (@fa = noshrink){
+    -webkit-box-flex:1;
+     -webkit-flex:1 0 auto;
+     flex:1 0 auto;
+}
+
+.justify-content(@jc) when (@jc = flex-start) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-pack: start;
+}
+
+.justify-content(@jc) when (@jc = flex-end) {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-flex-pack: end;
+}
+
+.justify-content(@jc) when (@jc = center) {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-pack:center;
+}
+
+.justify-content(@jc) when (@jc = space-between) {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-pack: justify;
+}
+
+.justify-content(@jc) when (@jc = space-around) {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.align-content(@ac) when (@ac=flex-start){
+	-webkit-flex-line-pack: start;
+    -webkit-align-content:flex-start;
+    align-content: flex-start;
+}
+
+.align-content(@ac) when (@ac=flex-end){
+	-webkit-flex-line-pack: end;
+    -webkit-align-content:flex-end;
+    align-content: flex-end;
+}
+
+.align-content(@ac) when (@ac=center){
+	-webkit-flex-line-pack: center;
+    -webkit-align-content:center;
+    align-content: center;
+}
+
+.align-content(@ac) when (@ac=stretch){
+	-webkit-flex-line-pack: stretch;
+    -webkit-align-content:stretch;
+    align-content: stretch;
+}
+
+.align-content(@ac) when (@ac=space-between){
+	-webkit-flex-line-pack: justify;
+    -webkit-align-content:space-between;
+    align-content: space-between;
+}
+
+.align-content(@ac) when (@ac=space-around){
+    -webkit-align-content:space-around;
+    align-content: space-around;
+}
+
+.flex-direction(@fd) when (@fd = row){
+	-webkit-box-orient:horizontal;
+    flex-direction:row;
+    -webkit-flex-direction:row;
+}
+
+.flex-direction(@fd) when (@fd = column){
+	-webkit-box-orient:vertical;
+    flex-direction:column;
+    -webkit-flex-direction:column;
+}
+
+.hairline(@position, @color) when (@position = top) {
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        right: auto;
+        height: 1px;
+        width: 100%;
+        background-color: @color;
+        display: block;
+        z-index: 15;
+        .transform-origin(50% 0%);
+    }
+}
+.hairline(@position, @color) when (@position = left) {
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        right: auto;
+        width: 1px;
+        height: 100%;
+        background-color: @color;
+        display: block;
+        z-index: 15;
+        .transform-origin(0% 50%);
+    }
+}
+.hairline(@position, @color) when (@position = bottom) {
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        top: auto;
+        height: 1px;
+        width: 100%;
+        background-color: @color;
+        display: block;
+        z-index: 15;
+        .transform-origin(50% 100%);
+    }
+}
+.hairline(@position, @color) when (@position = right) {
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: auto;
+        bottom: auto;
+        width: 1px;
+        height: 100%;
+        background-color: @color;
+        display: block;
+        z-index: 15;
+        .transform-origin(100% 50%);
+    }
+}
+
+//针对右边和底部
+.hairline-remove(@position) when not (@position = left) and not (@position = top) {
+    &:after {
+        display: none;
+    }
+}
+
+//针对左边和顶部
+.hairline-remove(@position) when not (@position = right) and not (@position = bottom) {
+    &:before {
+        display: none;
+    }
+}
+
+//针对右边和底部
+.hairline-color(@position, @color) when not (@position = left) and not (@position = top) {
+    &:after {
+        background-color: @color;
+    }
+}
+//针对左边和顶部
+.hairline-color(@position, @color) when not (@position = right) and not (@position = bottom) {
+    &:before {
+        background-color: @color;
+    }
+}
+
+//对SVG进行编码
+.encoded-svg-background(@svg) {
+    @url: `encodeURIComponent(@{svg})`;
+    background-image: url("data:image/svg+xml;charset=utf-8,@{url}");
+}

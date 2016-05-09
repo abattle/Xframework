@@ -1,0 +1,48 @@
+.ripple,
+a.floating-button,
+.floating-button > a,
+a.link,
+a.item-link,
+.button,
+.tab-link,
+.label-radio,
+.label-checkbox {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ripple-wave {
+  left: 0;
+  top: 0;
+  position: absolute !important;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  -webkit-transform: translate3d(0px, 0px, 0) scale(0);
+  transform: translate3d(0px, 0px, 0) scale(0);
+  -webkit-transition-duration: 1400ms;
+  transition-duration: 1400ms;
+}
+.ripple-wave.ripple-wave-fill {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  opacity: 0.35;
+}
+.ripple-wave.ripple-wave-out {
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  opacity: 0;
+}
+.button-fill .ripple-wave {
+  z-index: 1;
+}
+.button-fill .ripple-wave,
+.floating-button .ripple-wave {
+  background: rgba(255, 255, 255, 0.3);
+}
+.messagebar .ripple-wave {
+  background: rgba(0, 0, 0, 0.1);
+}

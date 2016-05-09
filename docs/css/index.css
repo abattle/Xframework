@@ -1,0 +1,33 @@
+body {
+    font-family: Muli,'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif !important;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Muli,'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+}
+
+.phone {
+    background: #111;
+    border-radius: 55px;
+    box-shadow: 0px 0px 0px 2px #aaa;
+    width: 320px;
+    height: 568px;
+    padding: 50px 25px;
+    float:left;
+    margin-right:20px;
+}
+
+.phone iframe {
+    width: 320px;
+    height: 440px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}

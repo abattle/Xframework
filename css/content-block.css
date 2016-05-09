@@ -1,0 +1,76 @@
+.content-block {
+  padding: 0 16px;
+}
+.content-block-title {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1;
+  margin: 16px 16px 16px;
+  padding-top: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+}
+.content-block-title + .list-block,
+.content-block-title + .content-block,
+.content-block-title + .card {
+  margin-top: 10px;
+}
+.content-block-inner {
+  padding: 16px 16px;
+  width: 100%;
+  position: relative;
+  color: #000;
+  background: #fff;
+}
+.content-block-inner:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #c8c7cc;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.content-block-inner:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #c8c7cc;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.page.ios-page .content-block-title {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #6d6d72;
+  margin: 35px 15px 10px;
+}
+.page.ios-page .content-block {
+  margin: 35px 0;
+  padding: 0 15px;
+  color: #6d6d72;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xframework-文档</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="libs/bootstrap/js/respond.js"></script>
+    <![endif]-->
+    <script src="../../libs/modernizr/modernizr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../libs/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../libs/raneto/raneto.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row marin-container">
+            <!--边栏-->
+            <div class="col-sm-2 main-menu">
+                <ul class="menu">
+                    <li class="page"><a href="../../index.html">介绍</a></li>
+                    <li class="category">
+                        <h5 class="category-title">开始使用</h5>
+                        <ul class="pages">
+                            <li class="page">
+                                <a href="../basefile.html">文件引入</a>
+                            </li>
+                            <li class="page">
+                                <a href="../basestruct.html">基本结构</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h5 class="category-title">CSS样式</h5>
+                        <ul class="pages">
+                            <li class="page">
+                                <a href="../contentblock.html">内容区</a>
+                            </li>
+                            <li class="page">
+                                <a href="../list.html">列表</a>
+                            </li>
+                            <li class="page">
+                                <a href="../checkbox_radio.html">复选框和单选框</a>
+                            </li>
+                            <li class="page">
+                                <a href="../form.html">表单</a>
+                            </li>
+                            <li class="page">
+                                <a href="../input.html">输入元素</a>
+                            </li>
+                            <li class="page">
+                                <a href="../button.html">按钮</a>
+                            </li>
+                            <li class="page">
+                                <a href="../ninesixteengrid.html">九宫格，十六宫格</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h5 class="category-title">相关JS</h5>
+                        <li class="page">
+                            <a href="./domoper.html">DOM操作</a>
+                        </li>
+                        <li class="page active">
+                            <a href="#">全局方法</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">正则</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">设备侦测</a>
+                        </li>
+                    </li>
+                    <li class="category">
+                        <h5 class="category-title">插件</h5>
+                        <li class="page">
+                            <a href="#">说明</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">滑动列表</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">水波纹按钮(仅andorid)</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <!--边栏-->
+            <!--主体内容-->
+            <div class="col-sm-10 main-content">
+                <section class="content">
+                    <h1 class="title">
+                        全局方法
+                    </h1>
+                    <div class="outline">
+                        <a href="#a1">isNil</a>
+                        <a href="#a2">isUndefined</a>
+                        <a href="#a3">isNull</a>
+                        <a href="#a4">isNaN</a>
+                        <a href="#a5">isArguments</a>
+                        <a href="#a6">isElement</a>
+                        <a href="#a7">isBoolean</a>
+                        <a href="#a8">isTypedArray</a>
+                        <a href="#a9">isDate</a>
+                        <a href="#a10">isDocument</a>
+                        <a href="#a11">isString</a>
+                        <a href="#a12">isNumber</a>
+                        <a href="#a13">isSafeInteger</a>
+                        <a href="#a14">isEmpty</a>
+                        <a href="#a15">isEqual</a>
+                        <a href="#a16">dataset</a>
+                        <a href="#a17">getTranslate</a>
+                        <a href="#a18">parseJSON</a>
+                        <a href="#a19">stringify</a>
+                        <a href="#a20">hasVal</a>
+                        <a href="#a21">formatNumber</a>
+                        <a href="#a22">fixStatusBar</a>
+                        <a href="#a23">getRandomID</a>
+                        <a href="#a24">numToChinese</a>
+                        <a href="#a25">random</a>
+                    </div>
+                    <h1>概述</h1>
+                    <p>在原Zepto的基础上，扩展了一些用于类型判断和数组转换等的工具方法。</p>
+                    <h1>
+                       <strong>isNil</strong>
+                       <div id="a1"></div>
+                    </h1>
+                    <p>检查value是否是null或者undefined。</p>
+                    <h1>
+                       <strong>isUndefined</strong>
+                       <div id="a2"></div>
+                    </h1>
+                    <p>检查value是否是undefined。</p>
+                    <h1>
+                       <strong>isNull</strong>
+                       <div id="a3"></div>
+                    </h1>
+                    <p>检查value是否是null。</p>
+                    <h1>
+                       <strong>isNaN</strong>
+                       <div id="a4"></div>
+                    </h1>
+                    <p>检查value是否是NaN。</p>
+                    <h1>
+                       <strong>isArguments</strong>
+                       <div id="a5"></div>
+                    </h1>
+                    <p>检查value是否是arguments对象。</p>
+                    <h1>
+                       <strong>isElement</strong>
+                       <div id="a6"></div>
+                    </h1>
+                    <p>检查value是否是DOM元素。</p>
+                    <h1>
+                       <strong>isBoolean</strong>
+                       <div id="a7"></div>
+                    </h1>
+                    <p>检查value是否是布尔值。</p>
+                    <h1>
+                       <strong>isTypedArray</strong>
+                       <div id="a8"></div>
+                    </h1>
+                    <p>检查value是否是系统数组而不是类数组。</p>
+                    <h1>
+                       <strong>isDate</strong>
+                       <div id="a9"></div>
+                    </h1>
+                    <p>检查value是否是日期类型。</p>
+                    <h1>
+                       <strong>isDocument</strong>
+                       <div id="a10"></div>
+                    </h1>
+                    <p>检查value是否是文档对象。</p>
+                    <h1>
+                       <strong>isString</strong>
+                       <div id="a11"></div>
+                    </h1>
+                    <p>检查value是否是字符串类型。</p>
+                    <h1>
+                       <strong>isNumber</strong>
+                       <div id="a12"></div>
+                    </h1>
+                    <p>检查value是否是数字类型。</p>
+                    <h1>
+                       <strong>isSafeInteger</strong>
+                       <div id="a13"></div>
+                    </h1>
+                    <p>检查value是否是安全数字类型。</p>
+                    <h1>
+                       <strong>isEmpty</strong>
+                       <div id="a14"></div>
+                    </h1>
+                    <p>检查value是否是空对象,集合,map或者Set。</p>
+                    <h1>
+                       <strong>isEqual</strong>
+                       <div id="a15"></div>
+                    </h1>
+                    <p>比较两个值是否相等，值可以是Plain Object或者基本数据类型值。</p>
+                    <h1>
+                       <strong>dataset</strong>
+                       <div id="a16"></div>
+                    </h1>
+                    <p>获取传入对象上以"data-"开头的属性。</p>
+                    <h1>
+                       <strong>getTranslate</strong>
+                       <div id="a17"></div>
+                    </h1>
+                    <p>获取元素css3的translate属性。</p>
+                    <h1>
+                       <strong>parseJSON</strong>
+                       <div id="a18"></div>
+                    </h1>
+                    <p>将对象字符串转化为JSON。</p>
+                    <h1>
+                       <strong>stringify</strong>
+                       <div id="a19"></div>
+                    </h1>
+                    <p>将JSON对象转为对象字符串</p>
+                    <h1>
+                       <strong>hasVal</strong>
+                       <div id="a20"></div>
+                    </h1>
+                    <p>判断给定plain object是否有给定属性值：$.hasVal(obj,key);</p>
+                    <h1>
+                       <strong>hasVal</strong>
+                       <div id="a21"></div>
+                    </h1>
+                    <p>判断给定plain object是否有给定属性值：$.hasVal(obj,key);</p>
+                    <h1>
+                       <strong>formatNumber</strong>
+                       <div id="a22"></div>
+                    </h1>
+                    <p>数字补0操作给定方法：$.formatNumber(num,n)。n默认为2。</p>
+                    <h1>
+                       <strong>fixStatusBar</strong>
+                       <div id="a23"></div>
+                    </h1>
+                    <p>fixStatusBar让顶部栏具有沉浸式效果。</p>
+                    <h1>
+                       <strong>getRandomID</strong>
+                       <div id="a24"></div>
+                    </h1>
+                    <p>得到一段指定长度的随机数字字符串。</p>
+                    <h1>
+                       <strong>numToChinese</strong>
+                       <div id="a25"></div>
+                    </h1>
+                    <p>将阿拉伯数字转化成中文数字表示。</p>
+                    <h1>
+                       <strong>random</strong>
+                       <div id="a26"></div>
+                    </h1>
+                    <p>产生一个指定范围内的随机数。</p>
+                </section>
+            </div>
+            <!--主体内容-->
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+
+</html>

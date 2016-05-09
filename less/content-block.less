@@ -1,0 +1,60 @@
+@import url('./include/_mixins.less');
+@import url('./include/_colors-vars.less');
+@contentBlockBorderColor: #c8c7cc;
+@contentBlockColor: #6d6d72;
+@contentBlockTitle: @contentBlockColor;
+.content-block {
+    padding: 0 16px;
+}
+
+.content-block-title {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 1;
+    margin: 16px 16px 16px;
+    padding-top: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.54);
+    + .list-block,
+    + .content-block,
+    + .card {
+        margin-top: 10px;
+    }
+}
+
+.content-block-inner {
+    padding: 16px 16px;
+    width: 100%;
+    position: relative;
+    color: #000;
+    background: #fff;
+    .hairline(top,
+    @contentBlockBorderColor);
+    .hairline(bottom,
+    @contentBlockBorderColor);
+}
+
+.page.ios-page {
+    .content-block-title {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #6d6d72;
+        margin: 35px 15px 10px;
+    }
+    .content-block {
+        margin: 35px 0;
+        padding: 0 15px;
+        color: #6d6d72;
+    }
+}

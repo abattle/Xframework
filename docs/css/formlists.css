@@ -1,0 +1,285 @@
+.page.ios-page .list-block.media-list .item-media,
+.page.ios-page .list-block li.media-item .item-media {
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+.page.ios-page .list-block.media-list .item-inner,
+.page.ios-page .list-block li.media-item .item-inner {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  -webkit-align-self: stretch;
+  -webkit-flex-item-align: stretch;
+  align-self: stretch;
+}
+.page.ios-page .list-block label.label-checkbox i.icon-form-checkbox {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  border-radius: 22px;
+  border: 1px solid #c7c7cc;
+  box-sizing: border-box;
+}
+.page.ios-page .list-block label.label-checkbox i.icon-form-checkbox:after {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: 50%;
+  margin-top: -4px;
+  width: 12px;
+  height: 9px;
+}
+.page.ios-page .list-block label.label-checkbox input[type="checkbox"],
+.page.ios-page .list-block label.label-checkbox input[type="radio"] {
+  display: none;
+}
+.page.ios-page .list-block label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+.page.ios-page .list-block label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox {
+  border: none;
+  background-color: #007aff;
+}
+.page.ios-page .list-block label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox:after,
+.page.ios-page .list-block label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox:after {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  color: #FFF;
+  content: '\f00c';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  pointer-events: none;
+}
+.page.ios-page .list-block label.label-radio {
+  cursor: pointer;
+}
+.page.ios-page .list-block label.label-radio input[type="checkbox"],
+.page.ios-page .list-block label.label-radio input[type="radio"] {
+  display: none;
+}
+.page.ios-page .list-block label.label-radio input[type="checkbox"] ~ .item-inner,
+.page.ios-page .list-block label.label-radio input[type="radio"] ~ .item-inner {
+  padding-right: 35px;
+}
+.page.ios-page .list-block label.label-radio input[type="checkbox"]:checked ~ .item-inner,
+.page.ios-page .list-block label.label-radio input[type="radio"]:checked ~ .item-inner {
+  background: no-repeat center;
+  background-image: url(images/radio-checked.png);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2013%2010'%3E%3Cpolygon%20fill%3D'%23007aff'%20points%3D'11.6%2C0%204.4%2C7.2%201.4%2C4.2%200%2C5.6%204.4%2C10%204.4%2C10%204.4%2C10%2013%2C1.4%20'%2F%3E%3C%2Fsvg%3E");
+  background-position: 90% center;
+  background-position: -webkit-calc(100% - 15px) center;
+  background-position: calc(100% - 15px) center;
+  -webkit-background-size: 13px 10px;
+  background-size: 13px 10px;
+}
+.page.ios-page .list-block label.label-checkbox,
+.page.ios-page .list-block label.label-radio {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.page.ios-page .list-block label.label-checkbox:active,
+.page.ios-page .list-block label.label-radio:active,
+.page.ios-page .list-block label.label-checkbox.active-state,
+.page.ios-page .list-block label.label-radio.active-state {
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+  background-color: #d9d9d9;
+}
+.page.ios-page .list-block label.label-checkbox:active .item-inner:after,
+.page.ios-page .list-block label.label-radio:active .item-inner:after,
+.page.ios-page .list-block label.label-checkbox.active-state .item-inner:after,
+.page.ios-page .list-block label.label-radio.active-state .item-inner:after {
+  background-color: transparent;
+}
+.page.android-page .list-block.media-list .item-media,
+.page.android-page .list-block li.media-item .item-media {
+  margin-top: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  -webkit-align-self: flex-start;
+  -webkit-flex-item-align: start;
+  align-self: flex-start;
+}
+.page.android-page .list-block.media-list .item-inner,
+.page.android-page .list-block li.media-item .item-inner {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  -webkit-align-self: stretch;
+  -webkit-flex-item-align: stretch;
+  align-self: stretch;
+}
+.page.android-page .list-block .item-media img {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  border-radius: 50%;
+}
+.page.android-page .list-block label.label-checkbox {
+  cursor: pointer;
+}
+.page.android-page .list-block label.label-checkbox i.icon-form-checkbox {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  border-radius: 2px;
+  border: 2px solid #6d6d6d;
+  box-sizing: border-box;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  background: transparent;
+}
+.page.android-page .list-block label.label-checkbox i.icon-form-checkbox:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FFF;
+  content: '\f00c';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  pointer-events: none;
+}
+.page.android-page .list-block label.label-checkbox input[type="checkbox"],
+.page.android-page .list-block label.label-checkbox input[type="radio"] {
+  display: none;
+}
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked ~ .item-after i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked ~ .item-after i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked ~ .item-inner i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked ~ .item-inner i.icon-form-checkbox {
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox:after,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox:after,
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked ~ .item-after i.icon-form-checkbox:after,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked ~ .item-after i.icon-form-checkbox:after,
+.page.android-page .list-block label.label-checkbox input[type="checkbox"]:checked ~ .item-inner i.icon-form-checkbox:after,
+.page.android-page .list-block label.label-checkbox input[type="radio"]:checked ~ .item-inner i.icon-form-checkbox:after {
+  opacity: 1;
+}
+.page.android-page .list-block label.label-radio i.icon-form-radio {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #6d6d6d;
+  box-sizing: border-box;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.page.android-page .list-block label.label-radio i.icon-form-radio:after {
+  content: ' ';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: #2196f3;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.page.android-page .list-block label.label-radio input[type="checkbox"],
+.page.android-page .list-block label.label-radio input[type="radio"] {
+  display: none;
+}
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked + .item-media i.icon-form-radio,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked + .item-media i.icon-form-radio,
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked ~ .item-after i.icon-form-radio,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked ~ .item-after i.icon-form-radio,
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked ~ .item-inner i.icon-form-radio {
+  border-color: #2196f3;
+}
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked + .item-media i.icon-form-radio:after,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked + .item-media i.icon-form-radio:after,
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked ~ .item-after i.icon-form-radio:after,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked ~ .item-after i.icon-form-radio:after,
+.page.android-page .list-block label.label-radio input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio:after,
+.page.android-page .list-block label.label-radio input[type="radio"]:checked ~ .item-inner i.icon-form-radio:after {
+  background-color: #2196f3;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.page.android-page .list-block label.label-checkbox,
+.page.android-page .list-block label.label-radio {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.page.android-page .list-block label.label-checkbox .item-after i.icon-form-checkbox,
+.page.android-page .list-block label.label-radio .item-after i.icon-form-checkbox,
+.page.android-page .list-block label.label-checkbox .item-after i.icon-form-radio,
+.page.android-page .list-block label.label-radio .item-after i.icon-form-radio {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+.media-list .page.android-page .list-block label.label-checkbox .item-media i.icon-form-checkbox,
+.media-list .page.android-page .list-block label.label-radio .item-media i.icon-form-checkbox,
+.media-item .page.android-page .list-block label.label-checkbox .item-media i.icon-form-checkbox,
+.media-item .page.android-page .list-block label.label-radio .item-media i.icon-form-checkbox,
+.media-list .page.android-page .list-block label.label-checkbox .item-media i.icon-form-radio,
+.media-list .page.android-page .list-block label.label-radio .item-media i.icon-form-radio,
+.media-item .page.android-page .list-block label.label-checkbox .item-media i.icon-form-radio,
+.media-item .page.android-page .list-block label.label-radio .item-media i.icon-form-radio {
+  margin-top: 4px;
+}
+.page.android-page .list-block label.label-checkbox:active,
+.page.android-page .list-block label.label-radio:active,
+.page.android-page .list-block label.label-checkbox.active-state,
+.page.android-page .list-block label.label-radio.active-state {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.page.android-page .list-block label.label-checkbox:active .item-inner:after,
+.page.android-page .list-block label.label-radio:active .item-inner:after,
+.page.android-page .list-block label.label-checkbox.active-state .item-inner:after,
+.page.android-page .list-block label.label-radio.active-state .item-inner:after {
+  background-color: transparent;
+}
+.page.android-page .list-block .item-link {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  display: -webkit-box;
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+.page.ios-page .list-block li a.item-link .item-inner,
+.page.android-page .list-block li a.item-link .item-inner {
+  padding-right: 42px;
+  background-size: 10px 20px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-position: -webkit-calc(94%) center;
+  background-position: calc(94%) center;
+}
+.page.ios-page .list-block li a.smart-select .item-after,
+.page.android-page .list-block li a.smart-select .item-after {
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+@media (min-width: 600px) {
+  .list-block li .item-link .item-inner {
+    background-position: 98% center!important;
+    background-position: -webkit-calc(98%) center !important;
+    background-position: calc(98%) center !important;
+  }
+}
